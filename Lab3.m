@@ -194,8 +194,8 @@ end
 scatter(prototypes(1,:), prototypes(2,:), 'g');
 hold on;
 title('K-Means where K = 10');
-xlabel('Feature 1')
-ylabel('Feature 2')
+xlabel('Feature 1');
+ylabel('Feature 2');
 
 % Fuzzy K-Means where b = 2
 b = 2;
@@ -213,8 +213,8 @@ hold on;
 scatter(cluster_centers(:,1), cluster_centers(:,2)); % Element U(i,j) indicates the degree of membership of the jth data point in the ith cluster
 hold on;
 title('Fuzzy K-Means where b = 2');
-xlabel('Feature 1')
-ylabel('Feature 2')
+xlabel('Feature 1');
+ylabel('Feature 2');
 
 
 %% Helper Functions 
