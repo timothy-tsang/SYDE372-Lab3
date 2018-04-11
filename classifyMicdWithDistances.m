@@ -12,5 +12,5 @@ function [indice] = classifyMicdWithDistances(covariance,mean,feature1,feature2)
     end
     
     % Return class with the minimal distance 
-    [smallestElement, indice]= min(listOfDistances);
+    [smallestElement, indice] = min(listOfDistances);
 end

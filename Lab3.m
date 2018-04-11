@@ -11,9 +11,9 @@
 load feat.mat
 
 % Setup for mean/covariance 
-f8points = zeros(2, 16);
-f8Mean = zeros(2,10);
-f8Covariance = cell(10,1);
+f8points = [];
+f8Mean = [];
+f8Covariance = [];
 for i=1:10
     % Get points for each image 
     for j=1:16
@@ -82,7 +82,7 @@ end
 
 %% Section 4 - Image Classification and Segmentation 
 maxRows = 256; 
-cimage = zeros(maxRows,maxRows);
+cimage = [];
 for i = 1:maxRows
     for j = 1:maxRows
         feature1 = multf8(i,j,1);
